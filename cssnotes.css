@@ -43,4 +43,40 @@ d. column-reverse (items are placed bottom to top)
 3. justify-content (Aligns items along the main axis)
 a. flex-start (items align at start) 
 b. flex-end (items align at end)
-c. center (items align in the center
+c. center (items align in the center)
+d. space-between (equal spaces between items)
+e. space-around (Equal space around items)
+f. space-evenly (Equal space distributed everywhere)
+
+4. align-items: (Aligns items along the cross axis), Align-content (Aligns multiple rows along the cross axis)
+a. stretch (Items stretch to fill the contianer)
+b. flex-start (Align at the start)
+c. flex-end (Align at the end)
+d. center (Align at the center)
+e. baseline (align items by thier baselines)
+
+5. flex-wrap (Defines whether items should wrap:)
+a. nowrap Items stay on one line.
+b. wrap: Items wrap onto multiple lines.
+c. wrap-reverse: Items wrap onto multiple lines in reverse order.
+d. gap: Adds spacing between items.
+
+Methods for (child):
+
+flex: A shorthand for flex-grow, flex-shrink, and flex-basis:
+Example: flex: 1 1 auto;
+
+flex-grow: Defines how much an item grows relative to others.
+Example: flex-grow: 2; (item takes twice as much space as items with flex-grow: 1).
+
+flex-shrink: Defines how much an item shrinks relative to others.
+Example: flex-shrink: 0; (item does not shrink).
+
+flex-basis: Defines the base size of an item before space is distributed.
+Example: flex-basis: 200px; (item starts at 200px width).
+
+align-self: Aligns a single item on the cross-axis (overrides align-items for that item):
+Values: auto, flex-start, flex-end, center, baseline, stretch.
+
+order:Specifies the order of an item (default is 0):
+Example: order: -1; (item appears before others).
