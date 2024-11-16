@@ -10,5 +10,8 @@
 ---global scope
 ---consistency
 ---ease of maintenance
+
+box-sizing property determines how the total width and height of an element are calculated.
+if content box is default: width and height include only the content
+
 */
-box-sizng property determines howw the total width and height of an element are calculated.
