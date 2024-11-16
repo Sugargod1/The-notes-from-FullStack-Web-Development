@@ -11,7 +11,36 @@
 ---consistency
 ---ease of maintenance
 
-box-sizing property determines how the total width and height of an element are calculated.
-if content box is default: width and height include only the content
+The box-sizing property determines how the total width and height of an element are calculated.
+if content box is default: width and height include only the content 
+padding and border added outside of this, wwhich increases total size
 
-*/
+When using flexbox elements often need to align perfectly within a containe, and unpredictable sizing (caused by padding or borders) can break layouts.
+Setting (box-sizing: border-box; ) ensures that
+1. Consistency in the layout: padding, borders don't overflow or disrupt flexbox calculations.
+2. Width or height of elements stays consistent, even when you add padding or borders.
+3. Simpler Alignment: border-box helps avoid layout issues caused by elements exceeding their allocated space.
+
+display: grid and flexbox difference:
+Grid is 2 dimensional, precise control over placement of items.
+Explicitly designed for grid based responsiveness,
+Items are positioned independently of content order.
+
+flexbox:
+One dimensional (row or column)
+Best for distributing space in a single axis.
+Items flow relative to each other, based on content order.
+
+Methods (parent):
+1. display: flex; activates the flexbox layout for the container.
+
+2. flex-direction: (Defines the main axis direction)
+a. row (items are placed left to right ---->)
+b. row-reverse (items are placed right to left <----)
+c. column (items are placed top to bottom)
+d. column-reverse (items are placed bottom to top)
+
+3. justify-content (Aligns items along the main axis)
+a. flex-start (items align at start) 
+b. flex-end (items align at end)
+c. center (items align in the center
