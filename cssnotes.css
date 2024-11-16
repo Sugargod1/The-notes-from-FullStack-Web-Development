@@ -1,1 +1,13 @@
-hello
+:root {
+  --base-clr: #11121a;
+  --line-clr: #42434a;
+  --hover-clr: #222533;
+  --text-clr: #e6e6ef;
+  --accent-clr: #5e63ff;
+  --secondary-text-clr: #b0b3c1;
+}
+/* using root is one of the best ways to declare the colors its a standard practice
+---global scope
+---consistency
+---ease of maintenance
+*/
